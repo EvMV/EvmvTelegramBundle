@@ -1,0 +1,23 @@
+parameters:
+
+services:
+  _instanceof:
+    Evmv\TelegramBot\Handle\GeneralInterface:
+      tags: ['telegram.general']
+
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  TelegramBot\Api\BotApi:
+    autowire: true
+    arguments:
+      - '%env(BOT_KEY)%'
+
+  TelegramBot\Api\Client:
+    autowire: true
+    arguments:
+      - '%env(BOT_KEY)%'
+
+  Evmv\TelegramBot\:
+    resource: '../../src/'
