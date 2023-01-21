@@ -1,0 +1,32 @@
+{
+  "name": "evmv/telegram-bundle",
+  "description": "A bundle for telegram bot",
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "keywords": ["telegram", "bot", "bundle", "symfony", "php"],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/stfalcon-studio/telegram-bot-api-php.git"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Evgen Mazur",
+      "email": "ev.mazur27@gmail.com"
+    }
+  ],
+  "require" : {
+    "php" : ">=8.1.0",
+    "ext-ctype": "*",
+    "ext-dom": "*",
+    "ext-libxml" : "*",
+    "symfony/framework-bundle": "6.2.*",
+    "telegram-bot/api": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Evmv\\TelegramBot\\": "src"
+    }
+  }
+}
