@@ -101,7 +101,7 @@ class StartCommand implements CommandInterface
 ```
 
 ### Handle inline keyboard button click:
-To create reply markup, use the service:
+To create inline markup, use the service:
 ```php
 Evmv\TelegramBot\Service\Keyboard\Reply\ReplyKeyboardGenerator
 ```
