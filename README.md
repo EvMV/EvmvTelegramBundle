@@ -320,7 +320,34 @@ class UserHaveEnoughMoney implements MiddlewareInterface
 }
 ```
 
-### GlobalMiddleware:safasfsdf
+### GlobalMiddleware:
+If you need to perform a filter before executing any function, create a class that implements the interface:
+```php
+Evmv\TelegramBot\Handle\Middleware\Global\GlobalMiddlewareInterface
+```
+
+You may need this when you need to protect against spam from a specific user:
+```php
+<?php
+
+declare(strict_types=1);
+
+namespace App\Controller;
+
+use Evmv\TelegramBot\Handle\Middleware\Global\GlobalMiddleware;
+use Evmv\TelegramBot\Handle\Middleware\Global\GlobalMiddlewareInterface;
+use TelegramBot\Api\Types\Update;
+
+#[GlobalMiddleware]
+class TextProcess implements GlobalMiddlewareInterface
+{
+    public function middleware(Update &$update): bool
+    {
+        // Checking if the user is a spammer
+    }
+}
+
+```
 
 ### Use complete event:
 Bundle releases the following events:
