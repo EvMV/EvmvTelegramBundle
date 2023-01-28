@@ -1,7 +1,7 @@
 ### Command:
-To create a command handler, create a class that implements [CommandInterface](https://github.com/EvMV/EvmvTelegramBundle/src/Handle/Command/CommandInterface.php)
+To create a command handler, create a class that implements [CommandInterface](../src/Handle/Command/CommandInterface.php)
 
-And describe the command in the attribute [Command](https://github.com/EvMV/EvmvTelegramBundle/src/Handle/Command/Command.php)
+And describe the command in the attribute [Command](../src/Handle/Command/Command.php)
 
 Example:
 ```php
@@ -30,7 +30,7 @@ You can also use command options by specifying the command as:
 #[Command(command: '/start{param}')]
 ```
 
-And then get this parameter using [TelegramProcessHelper](https://github.com/EvMV/EvmvTelegramBundle/src/Helper/Process/TelegramProcessHelper.php)
+And then get this parameter using [TelegramProcessHelper](../src/Helper/Process/TelegramProcessHelper.php)
 
 Example:
 ```php

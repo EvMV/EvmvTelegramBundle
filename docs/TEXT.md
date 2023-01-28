@@ -1,7 +1,7 @@
 ### Text
-To process incoming text, use a class that implements the [TextInterface](https://github.com/EvMV/EvmvTelegramBundle/src/Handle/Text/TextInterface.php).
+To process incoming text, use a class that implements the [TextInterface](../src/Handle/Text/TextInterface.php).
 
-And also the attribute that describes the [Text](https://github.com/EvMV/EvmvTelegramBundle/src/Handle/Text/Text.php).
+And also the attribute that describes the [Text](../src/Handle/Text/Text.php).
 
 Example:
 ```php

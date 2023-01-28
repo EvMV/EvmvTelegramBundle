@@ -1,5 +1,5 @@
 ### Handle inline keyboard button click:
-To create inline markup, use the service [ReplyKeyboardGenerator](https://github.com/EvMV/EvmvTelegramBundle/src/Service/Keyboard/Reply/ReplyKeyboardGenerator.php).
+To create inline markup, use the service [ReplyKeyboardGenerator](../src/Service/Keyboard/Reply/ReplyKeyboardGenerator.php).
 
 Example:
 ```php
@@ -41,9 +41,9 @@ class StartCommand implements CommandInterface
 
 ```
 
-To handle the button click, create a class that implements the interface [ActionInterface](https://github.com/EvMV/EvmvTelegramBundle/src/Handle/Action/ActionInterface.php).
+To handle the button click, create a class that implements the interface [ActionInterface](../src/Handle/Action/ActionInterface.php).
 
-And annotate it using [Action](https://github.com/EvMV/EvmvTelegramBundle/src/Handle/Action/Action.php).
+And annotate it using [Action](../src/Handle/Action/Action.php).
 
 Example:
 ```php
@@ -75,7 +75,7 @@ class ButtonClick implements ActionInterface
 ```
 
 ### Handle reply keyboard button click:
-To create reply markup, use the service [ReplyKeyboardGenerator](https://github.com/EvMV/EvmvTelegramBundle/src/Service/Keyboard/Reply/ReplyKeyboardGenerator.php).
+To create reply markup, use the service [ReplyKeyboardGenerator](../src/Service/Keyboard/Reply/ReplyKeyboardGenerator.php).
 
 Example:
 ```php

@@ -24,7 +24,7 @@ class TextProcess implements CommandInterface
 
 ```
 
-The handler class must implement the [MiddlewareInterface](https://github.com/EvMV/EvmvTelegramBundle/src/Handle/Middleware/Local/MiddlewareInterface.php).
+The handler class must implement the [MiddlewareInterface](../src/Handle/Middleware/Local/MiddlewareInterface.php).
 
 Example:
 ```php
@@ -45,7 +45,7 @@ class UserHaveEnoughMoney implements MiddlewareInterface
 ```
 
 ### GlobalMiddleware:
-If you need to perform a filter before executing any function, create a class that implements the [GlobalMiddlewareInterface](https://github.com/EvMV/EvmvTelegramBundle/src/Handle/Middleware/Global/GlobalMiddlewareInterface.php).
+If you need to perform a filter before executing any function, create a class that implements the [GlobalMiddlewareInterface](../src/Handle/Middleware/Global/GlobalMiddlewareInterface.php).
 
 You may need this when you need to protect against spam from a specific user:
 ```php
