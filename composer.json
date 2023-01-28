@@ -4,12 +4,6 @@
   "type": "symfony-bundle",
   "license": "MIT",
   "keywords": ["telegram", "bot", "bundle", "symfony", "php"],
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/stfalcon-studio/telegram-bot-api-php.git"
-    }
-  ],
   "authors": [
     {
       "name": "Evgen Mazur",
@@ -22,7 +16,7 @@
     "ext-dom": "*",
     "ext-libxml" : "*",
     "symfony/framework-bundle": "6.2.*",
-    "telegram-bot/api": "dev-master"
+    "telegram-bot-api/for-bundle": "1.0.x-dev"
   },
   "autoload": {
     "psr-4": {
