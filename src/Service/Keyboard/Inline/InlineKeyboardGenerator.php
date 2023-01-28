@@ -68,8 +68,6 @@ class InlineKeyboardGenerator
             $row[] = ['text' => $button->getText(), 'callback_data' => json_encode(['_ac' => $button->getOnClick(), ...$button->getArguments()])];
         }
 
-
-
         return new InlineKeyboardMarkup($buttonArray);
     }
 }
