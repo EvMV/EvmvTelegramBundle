@@ -15,7 +15,6 @@ class Handle extends AbstractController
     {
     }
 
-    #[Route(path: 'handle')]
     public function __invoke(): Response
     {
         if (!$this->core->middleware()) {
