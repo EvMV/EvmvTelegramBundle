@@ -12,7 +12,7 @@ use Evmv\TelegramBot\Handle\Middleware\Local\Middleware;
 use Evmv\TelegramBot\Handle\Text\Text;
 use TelegramBot\Api\Types\Update;
 
-#[Text(text: 'Buy cat')]
+#[Text(text: 'Hello world')]
 #[Middleware(class: UserHaveEnoughMoney::class)]
 class TextProcess implements CommandInterface
 {

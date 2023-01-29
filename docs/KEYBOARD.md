@@ -1,5 +1,5 @@
 ### Handle inline keyboard button click:
-To create inline markup, use the service [ReplyKeyboardGenerator](../src/Service/Keyboard/Reply/ReplyKeyboardGenerator.php).
+To create inline markup, use the service [InlineKeyboardGenerator](../src/Service/Keyboard/Inline/InlineKeyboardGenerator.php).
 
 Example:
 ```php
@@ -58,7 +58,7 @@ use Evmv\TelegramBot\Handle\Action\ActionInterface;
 use Evmv\TelegramBot\Helper\Process\TelegramProcessHelper;
 use TelegramBot\Api\Types\Update;
 
-#[Action(action: 'click')]
+#[Action(action: 'customHandleClick')]
 class ButtonClick implements ActionInterface
 {
     public function __construct(private readonly TelegramProcessHelper $processHelper)
