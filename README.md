@@ -16,9 +16,16 @@ return [
 ];
 ```
 
-And add your bot key to .env:
+Add your bot key to .env:
 ```dotenv
 BOT_KEY=your_telegram_bot_key
+```
+
+And add route to config/routes.yaml:
+```yaml
+telegram:
+    path: /handle
+    controller: Evmv\TelegramBot\Controller\Handle::__invoke
 ```
 
 ## Usage ##
