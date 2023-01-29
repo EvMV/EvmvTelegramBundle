@@ -334,6 +334,10 @@ class Core
 
         foreach ($queryParams as $queryParamName => $queryParamValue) {
             $command = str_replace(sprintf('{%s}', $queryParamName), '', $command);
+            if (empty($queryParamValue)) {
+                continue;
+            }
+
             $commandFromUpdate = str_replace($queryParamValue, '', $commandFromUpdate);
         }
 
@@ -366,7 +370,7 @@ class Core
         }
 
         $text = $message->getText();
-        if (!$text || '/' !== $text[0]) {
+        if (!$text || '/' === $text[0]) {
             return false;
         }
 

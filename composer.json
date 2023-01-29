@@ -16,7 +16,7 @@
     "ext-dom": "*",
     "ext-libxml" : "*",
     "symfony/framework-bundle": "6.2.*",
-    "telegram-bot-api/for-bundle": "1.0.x-dev"
+    "telegram-bot-api/for-bundle": "v1.0"
   },
   "autoload": {
     "psr-4": {
