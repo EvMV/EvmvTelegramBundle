@@ -297,11 +297,11 @@ class Core
                 continue;
             }
 
-            if (!$middleware->middleware($this->update)) {
+            if (!$this->middlewarePass($middleware)) {
                 return false;
             }
 
-            if (!$this->middlewarePass($middleware)) {
+            if (!$middleware->middleware($this->update)) {
                 return false;
             }
         }
