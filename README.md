@@ -1,6 +1,6 @@
 ## About 
-Bundle of wildcard attributes for the description of telegram functions.
-It will allow you to write flexible telegram bot systems.
+The bundle uses annotations, which allows you to create 
+flexible telegram bot systems.
 
 ## Install 
 Require the bundle and its dependencies with composer:
