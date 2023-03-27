@@ -56,67 +56,37 @@ class TelegramProcessHelper
         $message = $update->getMessage();
 
         if ($message) {
-            return $message->getChat()->getId();
+            return $message->getChat();
         }
 
         $callbackQuery = $update->getCallbackQuery();
 
         if ($callbackQuery) {
-            return $callbackQuery->getMessage()->getChat()->getId();
+            return $callbackQuery->getMessage()->getChat();
         }
 
         $editedMessage = $update->getEditedMessage();
 
         if ($editedMessage) {
-            return $editedMessage->getChat()->getId();
+            return $editedMessage->getChat();
         }
 
         $channelPost = $update->getChannelPost();
 
         if ($channelPost) {
-            return $channelPost->getChat()->getId();
+            return $channelPost->getChat();
         }
 
         $editedChannelPost = $update->getEditedChannelPost();
 
         if ($editedMessage) {
-            return $editedMessage->getChat()->getId();
+            return $editedMessage->getChat();
         }
 
         $myChatMember = $update->getMyChatMember();
 
         if ($myChatMember) {
-            return $myChatMember->getChat()->getId();
-        }
-
-        $shippingQuery = $update->getShippingQuery();
-
-        if ($shippingQuery) {
-            return $shippingQuery->getFrom()->getId();
-        }
-
-        $chosenInlineResult = $update->getChosenInlineResult();
-
-        if ($chosenInlineResult) {
-            return $chosenInlineResult->getFrom()->getId();
-        }
-
-        $preCheckoutQuery = $update->getPreCheckoutQuery();
-
-        if ($preCheckoutQuery) {
-            return $preCheckoutQuery->getFrom()->getId();
-        }
-
-        $inlineQuery = $update->getInlineQuery();
-
-        if ($inlineQuery) {
-            return $inlineQuery->getFrom()->getId();
-        }
-
-        $pollAnswer = $update->getPollAnswer();
-
-        if ($pollAnswer) {
-            return $pollAnswer->getFrom()->getId();
+            return $myChatMember->getChat();
         }
 
         return null;
