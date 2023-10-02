@@ -37,7 +37,7 @@ use TelegramBot\Api\Types\Update;
 
 class UserHaveEnoughMoney implements MiddlewareInterface
 {
-    public function middleware(Update &$update): bool
+    public function middleware(Update $update): bool
     {
         // Some filter
     }
@@ -62,7 +62,7 @@ use TelegramBot\Api\Types\Update;
 #[GlobalMiddleware]
 class TextProcess implements GlobalMiddlewareInterface
 {
-    public function middleware(Update &$update): bool
+    public function middleware(Update $update): bool
     {
         // Checking if the user is a spammer
     }
