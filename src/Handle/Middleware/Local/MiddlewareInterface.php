@@ -9,5 +9,5 @@ use Evmv\TelegramBot\Handle\GeneralInterface;
 
 interface MiddlewareInterface extends GeneralInterface
 {
-    public function middleware(Update &$update): bool;
+    public function middleware(Update $update): bool;
 }
